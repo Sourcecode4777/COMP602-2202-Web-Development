@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-/*color*/
+/* set up colors */
 
 :root{
   --orange:#f59b42;
@@ -10,7 +10,7 @@
 }
 
 
-/* set up nunito fonts  */
+/* set up nunito fonts got from google  */
 /* *{ means type selector that matches any type includes <div> , <body> , <button> */
 
 *{
@@ -23,7 +23,7 @@
   transition: all .2s linear;
 }
 
-/* HTML  */
+/* HTML font (16px = 1rem (base) */
 
 html{
   font-size: 62.5%;
@@ -33,7 +33,7 @@ html{
 }
 
 section{
-  padding:2rem 9%;
+  padding:2rem;
 }
 
 section:nth-child(even){
@@ -49,7 +49,7 @@ section:nth-child(even){
   padding-top: 1rem;
 }
 
-/* heading for the about page */
+/* heading for the about page (heading upper case for about) */
 
 .heading{
   text-align: center;
@@ -80,7 +80,7 @@ section:nth-child(even){
   letter-spacing: .1rem;
 }
 
-/* header swiperjs*/ 
+/* header swiperjs ( Elements with a higher index will be placed on top of elements with a lower index )*/ 
 
 header{
   position: fixed;
@@ -167,7 +167,8 @@ header .icons #menu-bars{
 }
 
 /* fit with tablet or smartphone, baiscally smaller screen than a pc */
-/* media queries */
+/* media queries ( inline-block allows to set a width and height on the element.)*/
+/*  clip-path: polygon clipping region that sets what part of an element should be shown as a polygon */
 
 @media (max-width:991px){
 
@@ -232,7 +233,7 @@ header .icons #menu-bars{
   padding:0 1rem;
 }
 
-/* This search function is active */
+/* This search function is active and ready to use */
 
 #search-form.active{
   top:0;
@@ -251,10 +252,6 @@ header .icons #menu-bars{
 #search-form #search-box::placeholder{
   color:#fff;
 
-}
-
-#search-form #search-box::-webkit-search-cancel-button{
-  -webkit-appearance: none;
 }
 
 #seach-form label{
@@ -317,7 +314,7 @@ header .icons #menu-bars{
   line-height: 1.5;
 }
 
-/* Slider */
+/* Slider bullet orange on stand by */
 
 .swiper-pagination-bullet-active{
   background:var(--orange);
@@ -399,9 +396,10 @@ header .icons #menu-bars{
 
 /* footer css here */
 
+
 .footer{
   background:#282727;
-  padding:1rem 7%;
+  padding:1rem;
 }
 
 .footer .box-container{
@@ -413,6 +411,8 @@ header .icons #menu-bars{
   flex:1 1 25rem;
   margin:2rem;
 }
+
+/* 400 is supposed to be equal to normal , while 700 is equal to bold */
 
 .footer .box-container .box h3{
   font-size: 2.5rem;
@@ -426,6 +426,8 @@ header .icons #menu-bars{
   color:rgb(2, 2, 2);
   padding:1rem 0;
 }
+
+/* display block  display property set to block starts on a new line */
 
 .footer .box-container .box a{
   font-size: 1.7rem;
