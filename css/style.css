@@ -11,6 +11,7 @@
 
 
 /* set up nunito fonts  */
+/* *{ means type selector that matches any type includes <div> , <body> , <button> */
 
 *{
   font-family: 'Nunito', sans-serif;
@@ -22,7 +23,7 @@
   transition: all .2s linear;
 }
 
-/* HTML test  */
+/* HTML  */
 
 html{
   font-size: 62.5%;
@@ -195,7 +196,7 @@ header .icons #menu-bars{
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-  /* drop menu on the phone */
+  /* every button active */
 
   header .navbar.active{
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -266,7 +267,7 @@ header .icons #menu-bars{
   color:var(--orange);
 }
 
-/* way to close when user is in the toggle pop up */
+/* To close when user is in the toggle pop up */
 
 #search-form #close{
   position: absolute;
@@ -349,7 +350,7 @@ header .icons #menu-bars{
   padding:.5rem 0;
 }
 
-/* for the description text */
+/* for the description text on the about */
 
 .about .row .content p{
   color:var(--light-color);
@@ -368,7 +369,7 @@ header .icons #menu-bars{
   margin-top: .5rem;
 }
 
-/* some css style for the buttons */
+/* css style for the buttons */
 
 .about .row .content .icons-container .icons{
   background:#eee;
@@ -395,8 +396,8 @@ header .icons #menu-bars{
   font-size: 1.5rem;
   color:var(--black);
 }
-/* information part ends here */
-/* footer */
+
+/* footer css here */
 
 .footer{
   background:#282727;
